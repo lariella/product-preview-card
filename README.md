@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./product-preview-card.jpg)
+![](./product-preview-card.png)
 
 ### Links
 
