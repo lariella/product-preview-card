@@ -1,0 +1,134 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+p {
+    font-size: 14px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+    width: 640px;
+    height: 480px;
+    margin-top: 120px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.product-description, .category, button, .original-price {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.product-name, .reduced-price {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+.product-name {
+    color: hsl(212, 21%, 14%);
+    padding-right: 20px;;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.category {
+    margin: 0;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-img-desktop {
+    width: 50%;
+}
+
+.product-img-mobile {
+    display: none;
+}
+
+.product-description {
+    line-height: 25px;
+    color: hsl(212, 21%, 14%);
+    margin: 0;
+    padding-right: 20px;
+}
+
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.reduced-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 31px;
+    margin: 25px 0px;
+}
+
+.original-price {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+    padding: 13px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 630px) {
+    .product-card {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        min-width: 355px;
+        margin: 20px 10px;
+    }
+
+    .product-info {
+        padding: 25px;
+    }
+
+    .product-img-desktop {
+        display: none;
+    }
+    
+    .product-img-mobile {
+        display: block;
+    }
+}
