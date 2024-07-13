@@ -50,10 +50,6 @@ p {
     color: hsl(228, 12%, 48%);
 }
 
-.product-img-desktop {
-    width: 50%;
-}
-
 .product-img-mobile {
     display: none;
 }
